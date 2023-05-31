@@ -1,0 +1,78 @@
+:root {
+    --numero-color: #011627;
+    --operando-color: #ff9f1c;
+    --blackbox: #011627;
+    --correcto: #2ec4b6;
+    --error: #ba181b;
+    --backgroundBox-color: #f5f3f4;
+    --borderContenedor-color: #011627;
+    --borderBox-color: #011627;
+    --tareaActual-color: #01BAEF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 0px;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  border: 3px solid var(--borderContenedor-color);
+}
+
+.box {
+  border: 1px solid var(--borderBox-color);
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  line-height: 100px;
+}
+
+.black {
+    background-color: var(--blackbox);
+}
+
+.number .operando .resultado {
+    background-color: var(--backgroundBox-color);
+}
+
+.casilla {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* .signo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 100px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+} */
+
+.score {
+  margin: 1% 48%;
+}
+
+.reset {
+  width: 100px;
+  height: 50px;
+  margin: 1% 48%;
+}
+
+.operando {
+  background-color: var(--tareaActual-color);
+  border: 3px solid yellow;
+}
