@@ -7,11 +7,22 @@
     <title>Juego de Aritmetica</title>
     <link rel="stylesheet" href="Estilos/style.css" />
   </head>
-  <body onload="crearDivs()">
+  <body>
+    <header class="aritmetica">
+      <h1>Juego de Aritmetica</h1>
+      <p>
+        Pon a prueba tus habilidades matematicas y realiza de forma correcta las
+        operaciones matematicas de forma horizontal y vertical, de tal manera
+        que coincidan
+      </p>
+    </header>
     <div id="contenedor" class="contenedor">
       <!-- Tablero de 6x6 -->
     </div>
     <h2 id="score" class="score">Puntaje</h2>
+    <button id="submit" class="submit" onclick="verificarOperaciones()">
+      Submit
+    </button>
     <button id="reset" class="reset">Reiniciar</button>
     <script src="JavaScript/app.js"></script>
   </body>

@@ -15,6 +15,18 @@
   padding: 0;
 }
 
+.aritmetica {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 30%;
+}
+
+.aritmetica h1 {
+  text-align: center;
+  padding: 20px;
+}
+
 .contenedor {
   display: flex;
   flex-wrap: wrap;
@@ -39,40 +51,36 @@
     background-color: var(--blackbox);
 }
 
-.number .operando .resultado {
-    background-color: var(--backgroundBox-color);
+.casilla, .operando, .resultado {
+  font-size: 50px;
+  background-color: var(--backgroundBox-color);
 }
 
 .casilla {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  font-size: 50px;
   text-align: center;
 }
 
-/* .signo {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  font-size: 100px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-} */
+.operando {
+  font-weight: bold;
+}
 
 .score {
   margin: 1% 48%;
 }
 
-.reset {
+.reset, .submit {
   width: 100px;
   height: 50px;
   margin: 1% 48%;
 }
 
-.operando {
-  background-color: var(--tareaActual-color);
-  border: 3px solid yellow;
+.resultado-correcto {
+  background-color: var(--correcto);
+}
+
+.resultado-incorrecto {
+  background-color: var(--error);
 }
